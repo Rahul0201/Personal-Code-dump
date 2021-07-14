@@ -1,0 +1,270 @@
+I have a confession to make. When I wrote the first edition of this book, I didn't
+have a clue what I was doing. I thought I knew Python and I thought I knew how
+to write. I quickly learned that this was false. Luckily, I became adept at both by
+finishing the book!
+I was so afraid that people wouldn't like Python 3 Object Oriented Programming that
+I skipped Pycon for two years straight. After a couple dozen positive reviews, my
+confidence was boosted and I finally attended Pycon 2012 in Santa Clara. I soon
+discovered that nobody had ever heard of me or my book. So much for arrogance!
+I was also afraid to reread the book after completing it. So while it has received many
+accolades, the copy on my shelf has remained firmly shut, save for when I open it for
+reference to answer a reader's query. In preparing this second edition, I was finally
+forced to face my demons. To my surprise and joy, I discovered that the book I wrote
+five years ago was both accurate and enjoyable, just as many reviewers had suggested.
+Shortly after that initial rereading, I got my first ever negative review on Amazon.
+It would have been devastating had I read it directly after completing the project.
+Fortunately, four years of good reviews and my own confidence in the writing
+allowed me to ignore the vitriol and take the remainder as constructive feedback.
+The truth is many of the flaws the reviewer had pointed out were features at the
+time the book was originally published. Python 3 Object Oriented Programming was
+showing its age, and it was clearly time for an update. You're holding the result in
+your hands (or flipping through it on your e-reader).
+I've often wondered why authors describe in detail what has changed between the
+editions of a technical book. I mean, seriously, how many people reading this second
+edition have read the first one? As with software versions, you safely assume the
+latest edition is the best, and you don't really care about the project's history. And
+yet, this project has consumed so much of my life over the past year that I can't
+leave without a few words about how much better the book has become.
+The original book was a little disorganized. Many chapters flowed directly into
+the next one, but there were a few key places where the topic change was jarring,
+or worse, irrelevant. The two chapters preceding the discussions about design
+patterns have been reorganized, reversed, and split into three chapters that flow
+cleanly into the next topic.
+I've also removed an entire chapter on third-party libraries for Python 3. This chapter
+made more sense when both the book and Python 3 were new. There were only a
+few libraries that had been ported to Python 3 and it was reasonable to have a best
+of breed discussion about each of them. However, I was unable to cover any of those
+topics in detail, and frankly, I could write an entire book on any one of them.
+Finally, I've added an entire new chapter on concurrency. I struggled with this
+chapter and I can freely admit that it's not directly related to object-oriented
+programming. However, much like the chapter on unit testing, I think that
+understanding concurrency is an integral part of all programming and especially
+of object-oriented programming in the Python ecosystem. You are, of course, free
+to skip those chapters if you disagree (or until you discover a reason to change
+your mind).
+Enjoy the book and your journey into the world of object-oriented programming.
+Dusty Phillips
+
+
+
+
+
+In a world increasingly centralized around information technology, huge amounts of data are produced
+and stored each day. Often these data come from automatic detection systems, sensors, and scientific
+instrumentation, or you produce them daily and unconsciously every time you make a withdrawal from the
+bank or make a purchase, when you record on various blogs, or even when you post on social networks.
+But what are the data? The data actually are not information, at least in terms of their form. In the
+formless stream of bytes, at first glance it is difficult to understand their essence if not strictly the number,
+word, or time that they report. Information is actually the result of processing, which taking into account a
+certain set of data, extracts some conclusions that can be used in various ways. This process of extracting
+information from the raw data is precisely data analysis.
+The purpose of data analysis is precisely to extract information that is not easily deducible but that,
+when understood, leads to the possibility of carrying out studies on the mechanisms of the systems that have
+produced them, thus allowing the possibility of making forecasts of possible responses of these systems and
+their evolution in time.
+Starting from a simple methodical approach on data protection, data analysis has become a real
+discipline leading to the development of real methodologies generating models. The model is in fact the
+translation into a mathematical form of a system placed under study. Once there is a mathematical or logical
+form able to describe system responses under different levels of precision, you can then make predictions
+about its development or response to certain inputs. Thus the aim of data analysis is not the model, but the
+goodness of its predictive power.
+The predictive power of a model depends not only on the quality of the modeling techniques but also
+on the ability to choose a good dataset upon which to build the entire data analysis. So the search for data,
+their extraction, and their subsequent preparation, while representing preliminary activities of an analysis,
+also belong to the data analysis itself, because of their importance in the success of the results.
+So far we have spoken of data, their handling, and their processing through calculation procedures.
+In parallel to all stages of processing of the data analysis, various methods of data visualization have been
+developed. In fact, to understand the data, both individually and in terms of the role they play in the entire
+data set, there is no better system than to develop the techniques of graphic representation capable of
+transforming information, sometimes implicitly hidden, in figures, which help you more easily understand
+their meaning. Over the years lots of display modes have been developed for different modes of data display:
+the charts.
+Chapter 1 ■ An Introduction to Data Analysis
+2
+At the end of the data analysis, you will have a model and a set of graphical displays and then you
+will be able to predict the responses of the system under study; after that, you will move to the test phase.
+The model will be tested using another set of data for which we know the system response. These data
+are, however, not used for the definition of the predictive model. Depending on the ability of the model to
+replicate real observed responses, you will have an error calculation and a knowledge of the validity of the
+model and its operating limits.
+These results can be compared with any other models to understand if the newly created one is
+more efficient than the existing ones. Once you have assessed that, you can move to the last phase of data
+analysis—the deployment. This consists of the implementation of the results produced by the data analysis,
+namely, the implementation of the decisions to be taken based on the predictions generated by the model
+and the risks that such a decision will also be predicted.
+Data analysis is a discipline that is well suited to many professional activities. So, knowledge of what it
+is and how it can be put into practice will be relevant for consolidating the decisions to be made. It will allow
+us to test hypotheses, and to understand more deeply the systems analyzed.
+Knowledge Domains of the Data Analyst
+Data analysis is basically a discipline suitable to the study of problems that may occur in several fields of
+applications. Moreover, in processes of data analysis you have many tools and methodologies that require
+good knowledge of computing and mathematical and statistical concepts.
+So a good data analyst must be able to move and act in many different disciplinary areas. Many of
+these disciplines are the basis of the methods of data analysis, and proficiency in them is almost necessary.
+Knowledge of other disciplines is necessary depending on the area of application and study of the particular
+data analysis project you are about to undertake, and, more generally, sufficient experience in these areas
+can just help you better understand the issues and the type of data needed to start with the analysis.
+Often, regarding major problems of data analysis, it is necessary to have an interdisciplinary team of
+experts made up of members who are all able to contribute in the best possible way in their respective fields
+of competence. Regarding smaller problems, a good analyst must be able to recognize problems that arise
+during data analysis, inquire to find out which disciplines and skills are necessary to solve the problem,
+study these disciplines, and maybe even ask the most knowledgeable people in the sector. In short, the
+analyst must be able to know how to search not only for data, but also for information on how to treat them.
+Computer Science
+Knowledge of Computer Science is a basic requirement for any data analyst. In fact, only one who has good
+knowledge of and experience in Computer Science is able to efficiently manage the necessary tools for
+data analysis. In fact, all the steps concerning the data analysis involve the use of computer technology as
+calculation software (such as IDL, Matlab, etc.) and programming languages (such as C ++, Java, Python).
+The large amount of data available today thanks to information technology requires specific skills in
+order to be managed as efficiently as possible. Indeed, data research and extraction require knowledge of the
+various formats. The data are structured and stored in files or database tables with particular formats. XML,
+JSON, or simply XLS or CSV files are now the common formats for storing and collecting data, and many
+applications also allow their reading and managing data stored on them. For the extraction of data contained
+in a database, things are not so immediate, but you need to know SQL query language or use software
+specially developed for the extraction of data from a given database.
+Moreover, for some specific types of data research, the data are not available in a pre-treated and
+explicit format, but are present in text files (documents, log files) or in web pages, shown as charts, measures,
+number of visitors, or HTML tables that require specific technical expertise for the parsing and the eventual
+extraction of these data (Web Scraping).
+Chapter 1 ■ An Introduction to Data Analysis
+3
+So, knowledge of information technology is necessary to know how to use the various tools made
+available by contemporary computer science, such as applications and programming languages. These
+tools, in turn, are needed to perform the data analysis and data visualization.
+The purpose of this book is precisely to provide all the necessary knowledge, as far as possible,
+regarding the development of methodologies for data analysis using Python as a programming language
+and specialized libraries that provide a decisive contribution to the performance of all the steps constituting
+the data analysis, from data research to data mining, up to getting to the publication of the results of the
+predictive model.
+Mathematics and Statistics
+As you will see throughout the book, data analysis requires a lot of math, which can be quite complex, during
+the treatment and processing of data. So competence in all of this is necessary, at least to understand what
+you are doing. Some familiarity with the main statistical concepts is also necessary because all the methods
+that are applied in the analysis and interpretation of data are based on these concepts. Just as you can say
+that computer science gives you the tools for data analysis, so you can say that the statistics provides the
+concepts that form the basis of the data analysis.
+Many are the tools and methods that this discipline provides to the analyst, and a good knowledge of
+how to best use them requires years of experience. Among the most commonly used statistical techniques in
+data analysis are
+• Bayesian methods
+• regression
+• clustering
+Having to deal with these cases, you’ll discover how the mathematics and statistics are closely related
+to each other, but thanks to special Python libraries covered in this book, you will have the ability to manage
+and handle them.
+Machine Learning and Artificial Intelligence
+One of the most advanced tools that falls in the data analysis is Machine Learning. In fact, despite data
+visualization and techniques such as clustering and regression, which should greatly help us to find
+information about our data set, during this phase of research, you may often prefer to use special procedures
+which are highly specialized in searching patterns within the data set.
+Machine Learning is a discipline that makes use of a whole series of procedures and algorithms which
+analyze the data in order to recognize patterns, clusters, or trends and then extract useful information for
+data analysis in a totally automated way.
+This discipline is increasingly becoming a fundamental tool of data analysis, and thus knowledge of it,
+at least in general, is of fundamental importance for the data analyst.
+Professional Fields of Application
+Another very important point is also the domain of competence from where the data come (biology, physics,
+finance, materials testing, statistics on population, etc.). In fact, although the analyst has had specialized
+preparation in the field of statistics, he must also be able to delve into the field of application and/or
+document the source of the data, with the aim of perceiving and better understanding the mechanisms that
+generated data. In fact, the data are not simple strings or numbers, but they are the expression, or rather the
+Chapter 1 ■ An Introduction to Data Analysis
+4
+measure, of any parameter observed. Thus, better understanding of the field of application where the data
+come from can improve their interpretation. Often, however, this is too costly for a data analyst, even one
+with the best intentions, and so it is good practice to find consultants or key figures to whom you can pose
+the right questions.
+Understanding the Nature of the Data
+The object of study of the data analysis is basically the data. The data then will be the key players in all
+processes of the data analysis. They constitute the raw material to be processed, and thanks to their
+processing and analysis it is possible to extract a variety of information in order to increase the level of
+knowledge of the system under study, that is, one from which the data came from.
+When the Data Become Information
+Data are the events recorded in the world. Anything that can be measured or even categorized can be
+converted into data. Once collected, these data can be studied and analyzed both to understand the nature
+of the events and very often also to make predictions or at least to make informed decisions.
+When the Information Becomes Knowledge
+You can speak of knowledge when the information is converted into a set of rules that help you to better
+understand certain mechanisms and so consequently, to make predictions on the evolution of some events.
+Types of Data
+The data can be divided into two distinct categories:
+• categorical
+• nominal
+• ordinal
+• numerical
+• discrete
+• continuous
+Categorical data are values or observations that can be divided into groups or categories. There are two
+types of categorical values: nominal and ordinal. A nominal variable has no intrinsic order that is identified
+in its category. An ordinal variable instead has a predetermined order.
+Numerical data are values or observations that come from measurements. There are two types of
+different numerical values: discrete and continuous numbers. Discrete values are values that can be
+counted and that are distinct and separated from each other. Continuous values, on the other hand, are
+values produced by measurements or observations that assume any value within a defined range.
+Chapter 1 ■ An Introduction to Data Analysis
+5
+The Data Analysis Process
+Data analysis can be described as a process consisting of several steps in which the raw data are transformed
+and processed in order to produce data visualizations and can make predictions thanks to a mathematical
+model based on the collected data. Then, data analysis is nothing more than a sequence of steps, each of
+which plays a key role in the subsequent ones. So, data analysis is almost schematized as a process chain
+consisting of the following sequence of stages:
+• Problem definition
+• Data extraction
+• Data cleaning
+• Data transformation
+• Data exploration
+• Predictive modeling
+• Model validation/test
+• Visualization and interpretation of results
+• Deployment of the solution
+Figure 1-1 is a schematic representation of all the processes involved in the data analysis.
+Figure 1-1. The data analysis process
+Problem Definition
+The process of data analysis actually begins long before the collection of raw data. In fact, a data analysis
+always starts with a problem to be solved, which needs to be defined.
+The problem is defined only after you have well-focused the system you want to study: this may be a
+mechanism, an application, or a process in general. Generally this study can be in order to better understand
+its operation, but in particular the study will be designed to understand the principles of its behavior in order
+to be able to make predictions, or to make choices (defined as an informed choice).
+Chapter 1 ■ An Introduction to Data Analysis
+6
+The definition step and the corresponding documentation (deliverables) of the scientific problem
+or business are both very important in order to focus the entire analysis strictly on getting results. In fact,
+a comprehensive or exhaustive study of the system is sometimes complex and you do not always have
+enough information to start with. So the definition of the problem and especially its planning can determine
+uniquely the guidelines to follow for the whole project.
+Once the problem has been defined and documented, you can move to the project planning of a data
+analysis. Planning is needed to understand which professionals and resources are necessary to meet the
+requirements to carry out the project as efficiently as possible. So you’re going to consider the issues in the
+area involving the resolution of the problem. You will look for specialists in various areas of interest and
+finally install the software needed to perform the data analysis.
+Thus, during the planning phase, the choice of an effective team takes place. Generally, these teams
+should be cross-disciplinary in order to solve the problem by looking at the data from different perspectives.
+So, the choice of a good team is certainly one of the key factors leading to success in data analysis.
+Data Extraction
+Once the problem has been defined, the first step is to obtain the data in order to perform the analysis. The
+data must be chosen with the basic purpose of building the predictive model, and so their selection is crucial
+for the success of the analysis as well. The sample data collected must reflect as much as possible the real
+world, that is, how the system responds to stimuli from the real world. In fact, even using huge data sets
+of raw data, often, if they are not collected competently, these may portray false or unbalanced situations
+compared to the actual ones.
+Thus, a poor choice of data, or even performing analysis on a data set which is not perfectly
+representative of the system, will lead to models that will move away from the system under study.
+The search and retrieval of data often require a form of intuition that goes beyond the mere technical
+research and data extraction. It also requires a careful understanding of the nature of the data and their
+form, which only good experience and knowledge in the problem’s application field can give.
+Regardless of the quality and quantity of data needed, another issue is the search and the correct choice
+of data sources.
+If the studio environment is a laboratory (technical or scientific), and the data generated are
+experimental, then in this case the data source is easily identifiable. In this case, the problems will be only
+concerning the experimental setup.
+But it is not possible for data analysis to reproduce systems in which data are gathered in a strictly
+experimental way in every field of application. Many fields of application require searching for data from the
+surrounding world, often relying on experimental data external, or even more often collecting them through
+interviews or surveys. So in these cases, the search for a good data source that is able to provide all the
+information you need for data analysis can be quite challenging. Often it is necessary to retrieve data from
+multiple data sources to supplement any shortcomings, to identify any discrepancies, and to make our data
+set as general as possible.
+When you want to get the data, a good place to start is just the Web. But most of the data on the Web can
+be difficult
