@@ -1,4 +1,5 @@
 #include<iostream>
+#include<string>
 
 class Rotor{
     private:
@@ -16,6 +17,7 @@ class Rotor{
             for(int i=1; i<27; i++){
                 if(encode[i] == simple) return i;
             }
+            return 0;
         }
 };
 
@@ -24,13 +26,20 @@ int main(){
     Rotor R2("QNTZPSFBOKMWRCJDIVLAEYUXHGQ");
     Rotor R3("LJVIUBHTCDYAKEQZPOSGXNRMWFL");
     Rotor reflector("LQYHOGNECVPUZTFDJAXWMKISRBL");
-    char simple;
+    std::string simple;
     char coded;
     int R1_rotation_count = 0, R2_rotation_count = 0, R3_rotation_count = 0;
     while(true){
         std::cout << "\n>>>  ";
         std::cin >> simple;
-        int temp = (int)simple - 64;
+        if( simple.length()!=1 || !( (simple[0]>64 && simple[0]<91)||(simple[0]>96 && simple[0]<123) ) ){
+            std::cout << "\t!Only alphabets are supported";
+            continue;
+        }
+        if( (simple[0]>96 && simple[0]<123) ) simple[0] -= 32;
+        
+
+        int temp = (int)simple[0] - 64;
 
         // ENOCDING
         temp = R1.goforward(temp);
